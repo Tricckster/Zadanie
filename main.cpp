@@ -5,19 +5,11 @@ using namespace std;
 
 void work()
 {
-	/**
-    + 1) считать число 
-    + 2) добавить его к одному из счетчиков соответсвующего класса эквивалетности: 
-    делится на 21
-    делится на 7 НЕ на 3
-    делится на 3 НЕ на 7
-    не делится ни на 7 ни на 3
-    + 3) ответ n21 * n7 + n21 * n3 + n21 * no + n21*(n21-1) / 2
-	*/
-	int n(0), cur(0);
-	int n21(0), n3(0), n7(0), no(0);
+	long long int n(0), cur(0);
+	long long int n21(0), n3(0), n7(0), no(0);
 	cin >> n;
-	for (int i(0); i<n; i++)
+	vector<long long int> numbers(n, 0);
+	for (long long int i(0); i<n; i++)
 	{
 		cin >> cur;
 		if (cur % 21 == 0)
