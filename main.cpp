@@ -10,9 +10,9 @@ void  work()
     + 2) вывести все пары чисел
     + 3) вместо пар вывести произведения
     + 4) проверить делимость произведений
-    5) посчиттать и выести коичество подходящих пар
+    + 5) посчиттать и выести коичество подходящих пар
 	*/
-	int n(0);
+	int n(0), otv(0);
 	cin >> n;
 	vector<int> numbers(n, 0);
 	for (int i(0); i<n; i++)
@@ -20,7 +20,8 @@ void  work()
 	for (int i(0); i<n; i++)
 		for (int j(i+1); j<n; j++)
 			if ((numbers[i] * numbers[j]) % 66 == 0)
-				cout << numbers[i] * numbers[j] << endl;
+				otv++;
+	cout << otv << endl;
 }
 
 int main(int argc, char** argv)
