@@ -7,7 +7,7 @@ void work()
 {
 	/**
     + 1)считать и сохранить все числа
-    2) вывести все пары
+    + 2) вывести все пары
     3) вместо пары вывести суммы
     4) проверить делимость суммы
     5) вывести только наибольшую сумму
@@ -18,7 +18,8 @@ void work()
 	for (int i(0); i<n; i++)
 		cin >> numbers[i];
 	for (int i(0); i<n; i++)
-		cout << numbers[i] << " ";
+		for (int j(i+1); j<n; j++)
+			cout << numbers[i] << " " << numbers[j] << endl;
 }
 
 int main(int argc, char** argv)
