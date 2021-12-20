@@ -8,7 +8,7 @@ void work()
 	/**
     + 1) считать и запомнить числа
     + 2) найти наибольшее четное и наибольшее нечетное числа
-    3) вывести сумму наибольших чисел
+    + 3) вывести сумму наибольших чисел
 	*/
 	int n(0), max(-1), max_1(0);
 	cin >> n;
@@ -20,7 +20,7 @@ void work()
 			max = numbers[i];
 		else if (numbers[i] > max_1 and numbers[i] %2 == 0)
 			max_1 = numbers[i];
-	cout << max << " " << max_1 << endl;
+	cout << max + max_1 << endl;
 }
 
 int main(int argc, char** argv) {
