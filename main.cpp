@@ -9,7 +9,7 @@ void work()
     + 1) считать и запомнить числа
     + 2) вывести все пары чисел
     + 3) вместо пар вывести произведения
-    4) проверить делимость произведений
+    + 4) проверить делимость произведений
     5) посчиттать и выести коичество подходящих пар
 	*/	
 	int n(0);
@@ -19,10 +19,12 @@ void work()
 		cin >> numbers[i];
 	for (int j(0); j<n; j++)
 		for (int i(j+1); i<n; i++)
-			cout << numbers[j] * numbers[i] << endl;
+			if ((numbers[j] * numbers[i])%14 == 0)
+				cout << numbers[j] * numbers[i] << endl;
 }
 
-int main(int argc, char** argv) {
+int main()
+{
 	work();
 	return 0;
 }
