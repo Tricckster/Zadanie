@@ -1,7 +1,21 @@
 #include <iostream>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
 
-int main(int argc, char** argv) {
+void work()
+{
+	/**
+    1)считать и сохранить все числа
+    2) вывести все пары
+    3) вместо пары вывести суммы
+    4) проверить делимость суммы
+    5) вывести только наибольшую сумму
+	*/
+}
+
+int main(int argc, char** argv)
+{
+	work();
 	return 0;
 }
+
