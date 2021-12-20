@@ -1,6 +1,19 @@
 #include <iostream>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+
+void work()
+{
+	/**
+    1) считать число 
+    2) добавить его к одному из счетчиков соответсвующего класса эквивалетности: 
+    делится на 21
+    делится на 7 НЕ на 3
+    делится на 3 НЕ на 7
+    не делится ни на 7 ни на 3
+    3) ответ n21 * n7 + n21 * n3 + n21 * no + n21*(n21-1) / 2
+	*/
+}
 
 int main(int argc, char** argv) {
 	return 0;
