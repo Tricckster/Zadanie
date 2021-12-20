@@ -1,6 +1,16 @@
 #include <iostream>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+void  work()
+{
+	/**
+    1) считать и запомнить числа
+    2) вывести все пары чисел
+    3) вместо пар вывести произведения
+    4) проверить делимость произведений
+    5) посчиттать и выести коичество подходящих пар
+	*/	
+	
+}
 
 int main(int argc, char** argv) {
 	return 0;
