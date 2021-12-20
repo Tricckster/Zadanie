@@ -20,7 +20,10 @@ void work()
 			max = numbers[i];
 		else if (numbers[i] > max_1 and numbers[i] %2 == 0)
 			max_1 = numbers[i];
-	cout << max + max_1 << endl;
+	if (max != -1 and max_1 != 0)
+		cout << max + max_1 << endl;
+	else
+		cout << -1 << endl;
 }
 
 int main(int argc, char** argv) {
