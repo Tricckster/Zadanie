@@ -7,17 +7,18 @@ void work()
 {	/**
 	+ 1. считать числа и вывести их
 	+ 2. посчитать сумму 3 чисел и вывести их
-	3. проврить кратна ли сумма 4, если да то вывести
+	+ 3. проврить кратна ли сумма 4, если да то вывести
 	4. посчитать сколько таких троек которые кратны 4
 	*/
-	int n(0);
+	long long int n(0);
 	cin >> n;
-	vector<int> numbers(n, 0);
-	for (int i(0); i<n; i++)
+	vector<long long int> numbers(n, 0);
+	for (long long int i(0); i<n; i++)
 		cin >> numbers[i];
-	for (int i(0); i<n; i++)
-		for (int j(i+1); j<n; j++)
-			for (int b(j+1); b<n; b++)
+	for (long long int i(0); i<n; i++)
+		for (long long int j(i+1); j<n; j++)
+			for (long long int b(j+1); b<n; b++)
+                if ((numbers[i] + numbers[j] + numbers[b]) % 4 == 0)
 				cout << numbers[i] << " " << numbers[j] << " " << numbers[b] << " " << numbers[i] + numbers[j] + numbers[b] << endl;
 }
 
