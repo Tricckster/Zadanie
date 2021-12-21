@@ -5,8 +5,8 @@ using namespace std;
 
 void work()
 {	/**
-	1. считать числа и вывести их
-	2. посчитать сумму 3 чисел и вывести их
+	+ 1. считать числа и вывести их
+	+ 2. посчитать сумму 3 чисел и вывести их
 	3. проврить кратна ли сумма 4, если да то вывести
 	4. посчитать сколько таких троек которые кратны 4
 	*/
@@ -16,7 +16,9 @@ void work()
 	for (int i(0); i<n; i++)
 		cin >> numbers[i];
 	for (int i(0); i<n; i++)
-		cout << numbers[i] << " ";
+		for (int j(i+1); j<n; j++)
+			for (int b(j+1); b<n; b++)
+				cout << numbers[i] << " " << numbers[j] << " " << numbers[b] << " " << numbers[i] + numbers[j] + numbers[b] << endl;
 }
 
 int main(int argc, char** argv)
